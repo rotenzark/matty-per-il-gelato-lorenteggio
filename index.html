@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte la vaschetta resta vuota con la spatola a riposo; se il codice non arriva, dopo 2,5 s è piena (stato finale) */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaVaschetta=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,53 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600;700;800&amp;family=Pacifico&amp;family=Ubuntu:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"IceCreamShop","name":"Matty per il Gelato","description":"Gelateria in Via Lorenteggio 43 a Milano: gelato naturale, anche vegano e senza lattosio, torte su ordinazione, cannoli, cassate, pastiere e granite siciliane.","url":"https://rotenzark.github.io/matty-per-il-gelato-lorenteggio/","image":"https://rotenzark.github.io/matty-per-il-gelato-lorenteggio/img/og.jpg","telephone":"+39 351 946 7837","address":{"@type":"PostalAddress","streetAddress":"Via Lorenteggio 43","postalCode":"20146","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.45303,"longitude":9.14651},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"15:00","closes":"19:50"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"142","bestRating":"5"},"sameAs":["https://www.instagram.com/mattyperilgelato2025/"]}
+{
+  "@context": "https://schema.org",
+  "@type": "IceCreamShop",
+  "name": "Matty per il Gelato",
+  "description": "Gelateria in Via Lorenteggio 43 a Milano: gelato naturale, anche vegano e senza lattosio, torte su ordinazione, cannoli, cassate, pastiere e granite siciliane.",
+  "url": "https://rotenzark.github.io/matty-per-il-gelato-lorenteggio/",
+  "image": "https://rotenzark.github.io/matty-per-il-gelato-lorenteggio/img/og.jpg",
+  "telephone": "+39 351 946 7837",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Lorenteggio 43",
+    "postalCode": "20146",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.45303,
+    "longitude": 9.14651
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "15:00",
+      "closes": "19:50"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/mattyperilgelato2025/"
+  ]
+}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -244,9 +283,9 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="d.google">su Google, 142 recensioni</span></p>
     </div>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«Un ottimo gelato artigianale con una giusta varieta' di gusti. Gustosissimi.»</p><p class="recensione__chi"><b>Giuseppe Micheli</b> <span data-i18n="d.g2s">Google, 2 settimane fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Buongiorno il gelato è buono, le torte e semi freddi sono fantastici .. grazie mille per esserci 😘»</p><p class="recensione__chi"><b>Tiziana Colucci</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Ho trovato questa gelateria per puro caso e devo dire che sono rimasta molto soddisfatta. Gelati artigianali molto buoni, consiglio il gusto stracciatella, personale gentile e socievole 😊<br>Ci tornerò»</p><p class="recensione__chi"><b>Katherine Calispa</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Un ottimo gelato artigianale con una giusta varieta' di gusti. Gustosissimi.»</p><p class="recensione__chi"><b>Giuseppe Micheli</b> <span data-i18n="d.g2s">Google, 2 settimane fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Buongiorno il gelato è buono, le torte e semi freddi sono fantastici .. grazie mille per esserci 😘»</p><p class="recensione__chi"><b>Tiziana Colucci</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Ho trovato questa gelateria per puro caso e devo dire che sono rimasta molto soddisfatta. Gelati artigianali molto buoni, consiglio il gusto stracciatella, personale gentile e socievole 😊<br>Ci tornerò»</p><p class="recensione__chi"><b>Katherine Calispa</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
       <li class="recensione reveal"><p class="recensione__testo">«<span class="taglio">[…]</span> Ho deciso comunque di ordinare una torta gelato in occasione della festa della mamma e sono rimasta molto soddisfatta - avevo anche chiesto di aggiungere una piccola scritta per la festa della mamma e sono stata accontentata. Assolutamente consigliata!»</p><p class="recensione__chi"><b>martisanti00</b> <span data-i18n="d.trip">TripAdvisor, maggio 2025</span></p></li>
       <li class="recensione reveal"><p class="recensione__testo" lang="en">«The best ice cream, lovely and friendly staff🤗»</p><p class="recensione__chi"><b>Joanna P</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
       <li class="recensione reveal"><p class="recensione__testo" lang="en">«Very yummy Icecream it’s like it’s home made very tasty»</p><p class="recensione__chi"><b>Deema W.H</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
@@ -274,7 +313,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       </div>
       <div class="dove">
         <div class="cartina reveal">
-          <iframe title="Mappa: Matty per il Gelato, Via Lorenteggio 43, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Matty%20per%20il%20Gelato%2C%20Via%20Lorenteggio%2043%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Matty per il Gelato, Via Lorenteggio 43, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Matty%20per%20il%20Gelato%2C%20Via%20Lorenteggio%2043%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Matty+per+il+Gelato%2C+Via+Lorenteggio+43%2C+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
         </div>
         <dl class="indirizzo">
           <div><dt data-i18n="o.dove">Dove</dt><dd data-i18n="o.dovev">Via Lorenteggio 43, 20146 Milano, all'angolo con Via Vignoli</dd></div>
@@ -309,7 +348,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="logo logo--piede" aria-hidden="true"><span class="logo__scritta"><span class="logo__matty">Matty</span><span class="logo__per">per il</span><span class="logo__gelato">Gelato</span></span></p>
     <p class="piede__dove">Via Lorenteggio 43, 20146 Milano · <a href="tel:+393519467837" class="intero">351 946 7837</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Tutti i giorni 15–19:50</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · le foto vengono dalla loro pagina Facebook, dal loro Instagram e dalla loro scheda Google; orari e recensioni da Google e TripAdvisor (settembre 2026). La vaschetta l&#39;abbiamo disegnata noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le foto vengono dalla loro pagina Facebook, dal loro Instagram e dalla loro scheda Google; orari e recensioni da Google e TripAdvisor (settembre 2026). La vaschetta l&#39;abbiamo disegnata noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -324,5 +363,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
